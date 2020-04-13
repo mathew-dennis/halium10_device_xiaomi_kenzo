@@ -61,4 +61,5 @@ ro.havoc.maintainer := Magicxavi
 PRODUCT_PACKAGES += \
     AdvancedControls \
     RemovePackages \
-    Recorder
+    Recorder \
+    CameraGo
