@@ -119,7 +119,6 @@ on property:vendor.ims.DATA_DAEMON_STATUS=1
     restart vendor.ims_rtp_daemon
 
 on charger
-    load_system_props
     setprop persist.sys.usb.config mass_storage
     start vendor.qcom-post-boot
     setprop persist.sys.usb.config mass_storage
