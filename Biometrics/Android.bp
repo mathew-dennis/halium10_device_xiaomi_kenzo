@@ -1,0 +1,31 @@
+cc_binary {
+    name: "android.hardware.biometrics.fingerprint@2.1-service.xiaomi_kenzo",
+    defaults: ["hidl_defaults"],
+    init_rc: ["android.hardware.biometrics.fingerprint@2.1-service.xiaomi_kenzo.rc"],
+    proprietary: true,
+    relative_install_path: "hw",
+    srcs: [
+        "BiometricsFingerprint.cpp",
+        "service.cpp",
+        "fingerprintd/FingerprintDaemonCallbackProxy.cpp",
+        "fingerprintd/FingerprintDaemonProxy.cpp",
+        "fingerprintd/IFingerprintDaemonCallback.cpp",
+        "fingerprintd/IFingerprintDaemon.cpp",
+        "fingerprintd/wrapper.cpp",
+    ],
+    cflags: [
+        "-Wno-unused-parameter",
+    ],
+    shared_libs: [
+        "libbinder",
+        "libcutils",
+        "liblog",
+        "libhidlbase",
+        "libhardware",
+        "libutils",
+        "libkeystore_aidl",
+        "android.hardware.biometrics.fingerprint@2.1",
+    ],
+
+}
+
