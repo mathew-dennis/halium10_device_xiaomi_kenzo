@@ -26,10 +26,13 @@
  */
 
 #include <sys/sysinfo.h>
+#include <sys/system_properties.h>
 
 #include "property_service.h"
 
-using android::init::property_set;
+int property_set(const char *key, const char *value){
+    return __system_property_set(key, value);
+} 
 
 char const *heapstartsize;
 char const *heapgrowthlimit;
