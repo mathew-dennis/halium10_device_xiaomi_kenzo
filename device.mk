@@ -574,3 +574,7 @@ PRODUCT_ODM_PROPERTIES += \
 # DPM
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.dpm.feature=0
+
+# DumpState
+PRODUCT_PACKAGES += \
+    android.hardware.dumpstate@1.1-service-kenzo
