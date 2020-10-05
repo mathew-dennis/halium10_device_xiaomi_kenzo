@@ -21,21 +21,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/kenzo/device.mk)
 
 # Inherit some common BlissOS stuff.
-$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
+$(call inherit-product, vendor/arrow/config/common.mk)
 
 
 # Set those variables here to overwrite the inherited values.
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := kenzo
-PRODUCT_NAME := havoc_kenzo
+PRODUCT_NAME := arrow_kenzo
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := Redmi Note 3
 TARGET_VENDOR := Xiaomi
+DEVICE_MAINTAINER := Magicxavi
 
 IS_PHONE := true
-TARGET_INCLUDE_STOCK_ARCORE := true
-
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Use the latest approved GMS identifiers unless running a signed build
@@ -54,11 +53,3 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 USE_CCACHE=0
 
-# Havoc build type
-HAVOC_BUILD_TYPE := Official
-ro.havoc.maintainer := Magicxavi
-
-PRODUCT_PACKAGES += \
-    AdvancedControls \
-    RemovePackages \
-    Recorder
