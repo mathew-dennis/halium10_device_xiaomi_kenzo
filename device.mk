@@ -307,12 +307,15 @@ PRODUCT_PACKAGES += \
     libbase_shim \
     ims-ext-common \
     ims-ext-common_system \
-    android.hardware.radio@1.0 \
-    android.hardware.radio.config@1.0 \
-    android.hardware.secure_element@1.0
+    qti-telephony-hidl-wrapper \
+    qti_telephony_hidl_wrapper.xml \
+    qti-telephony-utils \
+    qti_telephony_utils.xml \
+    telephony-ext
 
 PRODUCT_BOOT_JARS += \
-    ims-ext-common_system
+    ims-ext-common_system \
+    telephony-ext
 
 # IPA Manager
 #PRODUCT_PACKAGES += \
@@ -427,14 +430,10 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    qti-telephony-hidl-wrapper \
-    qti_telephony_hidl_wrapper.xml \
-    qti-telephony-utils \
-    qti_telephony_utils.xml \
-    telephony-ext
-
-PRODUCT_BOOT_JARS += \
-    telephony-ext
+    android.hardware.radio@1.4 \
+    android.hardware.radio@1.2 \
+    android.hardware.radio.config@1.0 \
+    android.hardware.secure_element@1.0
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
