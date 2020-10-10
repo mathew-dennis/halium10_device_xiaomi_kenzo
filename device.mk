@@ -214,6 +214,10 @@ include $(LOCAL_PATH)/rootdir/charger/charger.mk
 PRODUCT_PACKAGES += \
     librmnetctl
 
+# Disable trace
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.traced.enable=0
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
