@@ -312,6 +312,8 @@ PRODUCT_COPY_FILES += \
     prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-sp/libhwbinder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwbinder.so \
     prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-sp/libhwbinder.so:system/lib64/libhwbinder.so
 
+PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
+
 # IMS
 PRODUCT_PACKAGES += \
     libbase_shim \
