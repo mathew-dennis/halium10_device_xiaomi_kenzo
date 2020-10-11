@@ -323,8 +323,8 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.0 \
     android.hardware.secure_element@1.0
 
-PRODUCT_BOOT_JARS += \
-    ims-ext-common_system
+#PRODUCT_BOOT_JARS += \
+#    ims-ext-common_system
 
 # IPA Manager
 #PRODUCT_PACKAGES += \
@@ -444,8 +444,8 @@ PRODUCT_PACKAGES += \
     qti_telephony_utils.xml \
     telephony-ext
 
-PRODUCT_BOOT_JARS += \
-    telephony-ext
+#PRODUCT_BOOT_JARS += \
+#    telephony-ext
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
