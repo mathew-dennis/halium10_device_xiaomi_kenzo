@@ -322,7 +322,7 @@ PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
 # IMS
 PRODUCT_PACKAGES += \
     ims-ext-common \
-    ims-ext-common_system \
+    ims-ext-common.xml \
     android.hardware.radio@1.0 \
     android.hardware.radio.config@1.0 \
     android.hardware.secure_element@1.0
@@ -448,8 +448,8 @@ PRODUCT_PACKAGES += \
     qti_telephony_utils.xml \
     telephony-ext
 
-#PRODUCT_BOOT_JARS += \
-#    telephony-ext
+PRODUCT_BOOT_JARS += \
+    telephony-ext
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
@@ -462,8 +462,7 @@ PRODUCT_PACKAGES += \
 
 # Shim
 PRODUCT_PACKAGES += \
-    libshims_dpmd \
-    libshim_ims
+    libshims_dpmd
 
 # Strip debug
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
