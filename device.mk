@@ -321,7 +321,6 @@ PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
 
 # IMS
 PRODUCT_PACKAGES += \
-    libbase_shim \
     ims-ext-common \
     ims-ext-common_system \
     android.hardware.radio@1.0 \
