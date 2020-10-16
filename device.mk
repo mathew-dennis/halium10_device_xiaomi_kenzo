@@ -597,3 +597,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # DumpState
 PRODUCT_PACKAGES += \
     android.hardware.dumpstate@1.1-service-kenzo
+    
+# QMI
+PRODUCT_PACKAGES += \
+    libqti_vndfwk_detect \
+    libqti_vndfwk_detect.vendor
+
