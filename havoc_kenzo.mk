@@ -62,4 +62,5 @@ PRODUCT_PACKAGES += \
     AdvancedControls \
     RemovePackages \
     Recorder \
-    CameraGo
+    CameraGo \
+    Phonograph
