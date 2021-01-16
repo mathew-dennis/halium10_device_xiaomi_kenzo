@@ -63,4 +63,5 @@ PRODUCT_PACKAGES += \
     RemovePackages \
     Recorder \
     CameraGo \
-    Phonograph
+    Phonograph \
+    FirefoxLite
